@@ -6,6 +6,11 @@ class Api::V1::MoodsController < ApplicationController
         render json: MoodSerializer.new(moods)
     end
 
+    def new 
+        mood = Mood.new
+    end
+
+
     def create
         mood = Mood.create(mood_params)
         if mood.save!
