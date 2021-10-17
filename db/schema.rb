@@ -10,11 +10,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_10_17_164908) do
+ActiveRecord::Schema.define(version: 2021_10_17_171805) do
 
   create_table "affirmations", force: :cascade do |t|
     t.string "name"
     t.integer "user_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "meditation_logs", force: :cascade do |t|
+    t.integer "user_id"
+    t.string "name"
+    t.string "description"
+    t.integer "duration"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
