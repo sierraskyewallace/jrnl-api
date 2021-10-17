@@ -43,3 +43,4 @@ POST api/v1/meditations
 
 DELETE api/v1/meditations/:id
 DELETE api/v1/affirmations/:id
+
