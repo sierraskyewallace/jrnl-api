@@ -26,3 +26,9 @@ name:string
 user_id:integer
 description:text
 CREATED AT or datetime ? ****** 
+
+
+
+-------------------
+
+GET /moods
