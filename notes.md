@@ -1,5 +1,8 @@
 WellSelf - A mental wellness app that tracks moods, affirmations and meditation sessions.
 
+
+**Possibly add wellness articles and scrape from web??
+
 User - 
 
 has_many :affirmations, :moods, :meditation_logs
