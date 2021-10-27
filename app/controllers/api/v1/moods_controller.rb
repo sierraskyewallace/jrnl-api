@@ -19,6 +19,7 @@ class Api::V1::MoodsController < ApplicationController
             render json: {error: mood.errors.full_messages}
         end
     end
+    
 
     private
 

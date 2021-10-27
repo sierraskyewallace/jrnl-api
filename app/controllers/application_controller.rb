@@ -1,5 +1,4 @@
 class ApplicationController < ActionController::API
-    class ApplicationController < ActionController::API
   before_action :authorized
 
   def encode_token(payload)
@@ -22,7 +21,7 @@ class ApplicationController < ActionController::API
         nil
       end
     end
-  end
+end
 
   def current_user
     if decoded_token
