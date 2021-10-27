@@ -11,7 +11,7 @@ class Api::V1::AuthController < ApplicationController
       @token = encode_token({ user_id: @user.id })
       render json: { user: AuthSerializer.new(@user), jwt: @token }, status: :created
     else
-      render json: { error: 'failed to create user' }, status: :unprocessable_entity
+      render json: { error: 'Invalid Credentials' }, status: :unprocessable_entity
     end
   end
 
