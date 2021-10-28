@@ -1,5 +1,5 @@
 class Api::V1::MoodsController < ApplicationController
-  
+    
 
     def index 
         moods = Mood.all
@@ -24,6 +24,6 @@ class Api::V1::MoodsController < ApplicationController
     private
 
     def mood_params
-        params.require(:mood).permit(:name, :description)
+        params.require(:mood).permit(:name, :description, :user_id, user_attributes: [:id, :username, :password])
     end
 end
